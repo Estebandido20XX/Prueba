@@ -21,7 +21,8 @@ CodigoEmpresa int not null primary key,
 NombreEmpresa Varchar(50) not null,
 CodigoEmpleador int foreign key REFERENCES Empleador(CodigoEmpleador)
 );
-
+/* Commit de prueba (con error)*/
+Insert into Empleador values(5,"Damian","Quiroz", 26)
 Insert into Empleador values(1,"Esteban","Sanchez",20);
 Insert into Empleador values(2,"Ignacio","Venegas",20);
 Insert into Empleador values(3,"Jorge","Sanchez",45);
@@ -31,3 +32,6 @@ Insert into Empresa values(1,"Sanchez&Cia.",4);
 Insert into Empresa values(2,"IPSantiago",3);
 Insert into Empresa values(3,"SQL Inc.",2);
 Insert into Empresa values(4,"Java Ltda.",1);
+/* Commit de prueba (con error) */
+Insert into Empresa values(4,Ruby Ltda.",1)
+
