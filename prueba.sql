@@ -1,4 +1,11 @@
-/*creado en SQL Server*/
+/*creado en SQL Server
+En caso de que se aplique en Mysql
+utilizar el siguiente comando:
+
+Create database Prueba;
+
+y quitar los [] en el comando de use
+*/
 
 Use [Prueba];
 
