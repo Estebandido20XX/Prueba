@@ -1,0 +1,30 @@
+#title h1{
+    font-family:sans-serif;
+    font-size:40px;
+    background-color:cadetblue;
+    padding: 40px 50px;
+
+}
+
+#nav a{
+    display: inline-block;
+    font-family:sans-serif;
+    font-size: 20px;
+    background-color: cadetblue;
+    color:black;
+    padding: 10px 30px;
+}
+
+#nav :hover{
+background-color:rgb(6, 181, 187);
+}
+
+#text h2{
+    font-size: 35px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#text p{
+    font-size: 20px;
+    font-family: monospace;
+}
