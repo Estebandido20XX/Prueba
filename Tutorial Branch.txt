@@ -1,0 +1,53 @@
+Como crear un branch y subir un archivo en ello
+
+1.- Saber cuantos branch hay en el repositorio, para ello utilizamos el comando:
+
+	git branch
+
+2.- Creamos el branch con este comando
+
+	git branch ejemplo
+		
+	pero en mi caso crearé un branch llamado paginaweb: git branch paginaweb
+
+    Puedes usar nuevamente el primer comando para ver los branch disponibles
+
+3.- Para cambiarte al branch que creaste, hay que usar este comando:
+
+	git checkout ejemplo
+
+		En mi caso: git checkout paginaweb
+
+4.- Ahora agregaremos cualquier cosa en ese branch, ya sea archivo o carpeta, para ello usaremos:
+
+	git add random
+
+		ejemplo: git add html
+
+    tambien puedes usar "git add -A" para agregar todos los archivos en esa carpeta
+
+5.- Haces un commit de lo que has hecho en el branch:
+
+	git commit -m "Nuevo branch"
+
+6.- Para realizar los cambios, tenemos que regresar al branch master:
+
+	git checkout master
+
+    y para terminar haremos push pero dando de origen al nuevo branch
+
+	git push origin ejemplo
+
+		en el mio puse: git push origin paginaweb
+
+7.- Revisa tu repositorio y te daras cuenta de que hay 2 branch, eso significa que ha resultado el agregado de archivos a ese branch
+ 
+Datos opcionales:
+
+8.- Por si quieres cambiar el nombre de tu branch, basta con que escribas el siguiente comando:
+
+	git branch -m paginaweb pagina
+
+9.- O si quieres borrarla solamente escribes este comando:
+	
+	git branch -d paginaweb
