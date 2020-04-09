@@ -1,35 +1,52 @@
 <html>
     <head>
         <link rel="stylesheet" href="css/css1.css">
+        <script type="text/javascript" src="javascript/ventanas.js"></script>
         <title>Sitio Web Basico</title>
     </head>
     <body bgcolor="lightblue">
-        <center>
         <header>
+            <center>
             <div id = "title">
                 <h1>Bienvenido a mi sitio</h1>
-            </div>        
-        </header>
-        
+            </div>   
+        </center>     
         <nav>
             <div id = "nav">
             <a href="index.html">Inicio</a>
             <a href="info.html">Informacion</a>
             </div>
         </nav>
+        <aside>
+            <div id = "right">
+                <h1>Hora actual</h1>
+                <script src="javascript/hora.js">
+                </script>
+                <h2>Ingreso de ususario (prueba) </h2>>
+                <table border="1">
+                    <tr><td>Nombre</td><td><input type="text" name="user" id=user> <br></td></tr>
+                    <tr><td>Contraeña:</td><td><input type="password" name="pass" id=pass></td></tr>
+                </table>>
+                <button onclick="acceso()">Ingresar</button>
+            </div>
+        </aside>
         <section>
+            <div id = "seccion">
             <article>
                 <div id = "text">
                     <h2>Informacion del sitio</h2>
                     <p> Esta pagina esta creada con el fin de mostrar los conocimientos <br>
-                        que tenemos sobre html y css
-                        Hasta el momento este es un avance, pero pronto se agregarán mas cosas</p>
+                        que tenemos sobre html y css <br>
+                        Hasta el momento este es un avance, <br>
+                        pero pronto se agregarán mas cosas</p>
                 </div>
             </article>
+            </div>
         </section>
         <footer>
+            <div id = "pie">
             <small>Hecho por Esteban Sanchez</small>
+            </div>
         </footer>
-        </center>
     </body>
 </html>
