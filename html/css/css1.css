@@ -1,24 +1,19 @@
 #title h1{
-    font-family:sans-serif;
-    font-size:40px;
-    background-color:cadetblue;
-    border: 2px solid black;
-    padding: 40px 300px;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    text-align: center;
+}
+
+#title p{
+    font-size: 20px;
+    text-align: center;    
 }
 
 #nav a{
-    display: inline-block;
     font-family:sans-serif;
     font-size: 20px;
-    background-color: cadetblue;
-    color:black;
-    border: 2px solid black;
-    padding: 10px 30px;
 }
 
-#nav :hover{
-background-color:rgb(6, 181, 187);
-}
 
 #text h2{
     font-size: 30px;
@@ -31,16 +26,43 @@ background-color:rgb(6, 181, 187);
 }
 
 #seccion {
-    float: left;
-    padding: 20px 30px;
+    width: 68%;
+    margin: 20px 0px;
+    text-align: left;
+}
+
+#article{
+    background-color: lightgray;
+    border: 0,5px solid black;
+    padding: 20px;
+    margin-bottom: 15px;
+
 }
 
 #right {
-    border: 2px solid black;
-    padding: 0px 10px;
+    text-align: center;
+    width: 30%;
+    margin: 20px;
+    background-color: lightgray;
     float: right; 
+    padding: 20px;
 }
 
 #pie{
     clear: both;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+#img1{
+    display: inline-block;
+    width :200px;
+}
+
+#img2{
+    width: 100px;
+}
+
+#iconav{
+    width: 25px;
 }
