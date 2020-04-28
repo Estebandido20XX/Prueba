@@ -1,0 +1,9 @@
+1.- Cuando estabamos en querer implantar Angular, no sabiamos cual Angular era, ya que existian 2 framework con el mismo nombre, o algo asi
+Angular y AngularJS, la diferencia entre ambos es que Angular es una Aplicación web
+Fuimos por el camino equivocado utilizando Angular, ya que nos ha costado mucho realizar los cambios a la pagina
+
+2.- Durante la creacion de la pagina en Angular, tuvimos problemas con el mismo, por ejemplo la toma de los CSS, JS e imagenes, sin embargo eso se resolvió llevando todos los archivos a la carpeta "Assets"
+
+3.- Tenia la duda de que si el framework que estamos usando era el adecuado, por lo que hemos consultado con el profesor, y al final, era recomendable usar AngularJS, por lo que tuvimos que comenzar de nuevo pero con el ultimo framework que no era tan dificil que el anterior
+
+4.- El problema que tenia despues de crear una lista de nombres y apellidos, es que al ingresar estos en blanco, me agrega como nombre y apellido y despues lanza la alerta de que ingresara estos, ademas que con la aplicación de AngularJS, ignora el comando <center>, no he logrado averiguar el porque ocurre esto

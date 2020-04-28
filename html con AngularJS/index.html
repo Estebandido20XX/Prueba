@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html ng-app="app">
+    <head>
+        <link rel="stylesheet" href="css/css1.css">
+        <script type="text/javascript" src="javascript/ventanas.js"></script>
+        <title>Sitio Web Basico</title>
+        <script src="javascript/angular.min.js"></script>
+    </head>
+    <body bgcolor="lightblue">
+        <header>
+        <center>
+            <div id = "title">
+                <h1>Bienvenido a mi sitio</h1>
+            </div>      
+        </center>  
+        <nav>
+            <div id = "nav">
+            <a href="index.html">Inicio</a>
+            <a href="info.html">Informacion</a>
+            </div>
+        </nav>
+        <aside>
+            <div id = "right">
+                <h1>Hora actual</h1>
+                <script src="javascript/hora.js">
+                </script>
+                <h2>Ingreso de usuario (prueba) </h2>
+                <table border="1">
+                    <tr><td>Nombre</td><td><input type="text" name="user" id=user> <br></td></tr>
+                    <tr><td>Contraseña:</td><td><input type="password" name="pass" id=pass></td></tr>
+                </table>
+                <button onclick="acceso()">Ingresar</button>
+            </div>
+        </aside>
+        <section>
+            <script src="javascript/app.js"></script>
+            <div id = "seccion" ng-controller="controlador as lista">
+            <article>
+                <center>
+                <div id = "text">
+                    <h1>Prueba de AngularJS</h1>
+                    <table border="1">
+                        <tr><td>Nombre</td><td> <input type="text" ng-model= "lista.nombre"></td></tr>
+                        <tr><td>Apellido:</td><td><input type="text" ng-model= "lista.apellido"></td></tr>
+                    </table>
+
+                    <input type="button" value="Añadir" ng-click="lista.addUsuario()">
+
+                    <br>
+
+                    <table border="1">
+                        <tr><td>Codigo</td><td>Nombre</td><td>Apellido</td></tr>
+                        <tr ng-repeat="usuario in lista.usuarios"><td> {{ usuario.id }}</td><td> {{ usuario.nombre }}</td><td> {{ usuario.apellido }}</td></tr>
+                    </table>
+
+                    
+                </div>
+                </center>
+            </article>
+            </div>
+        </section>
+        <footer>
+            <div id = "pie">
+            <small>Hecho por Esteban Sanchez</small>
+            </div>
+        </footer>
+    </body>
+</html>
